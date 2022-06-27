@@ -25,21 +25,11 @@ html {
 }
 
 body {
-  /* background-image: url(../imagenes/bacground-image.jpg);
-  background-size: cover;
-  /*background-color: black;*/
   font-family: BarlowCondensed;
   font-size: 2rem;
   color: black;
-  /* background-color: white;*/
   background-image: url('../imagenes/curvas.jpg');
   background-size: cover;
-  /*background-position: absolute;
-  top: 0;
-  left: 0px;*/
-  width: 100%;
-  height: 100%;
-  z-index: -1;
 }
 
 header {
@@ -223,7 +213,7 @@ a:hover {
   width: 65vw;
   height: 65vh;
   border-radius: 20px;
-  animation: agrandaIndexImg 0.7s ease-in 0s 1 forwards;
+  animation: agrandaIndexImg 0.5s ease-in 0s 1 forwards;
 }
 
 @keyframes agrandaIndexImg {
@@ -249,6 +239,7 @@ a:hover {
   width: 45vw;
   margin: 5px;
   padding: 20px;
+  line-height: 1.5;
 }
 
 .osteopatia-def ul {
@@ -307,7 +298,20 @@ a:hover {
   height: 70vh;
   margin: 5px;
   border-radius: 20px;
-  border: 3px solid rgb(21, 4, 94);
+  border: 5px solid rgb(29, 6, 133);
+  animation: agrandasergio 0.5s ease-in 0s 1 forwards;
+}
+@keyframes agrandasergio {
+  from {
+    width: 15vw;
+    height: 50vh;
+    border-radius: 30%;
+  }
+  to {
+    width: 25vw;
+    height: 70vh;
+    border-radius: 20px;
+  }
 }
 
 /*fin quien soy css*/
@@ -327,6 +331,13 @@ a:hover {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+}
+.tituloServicios {
+  width: 40vw;
+  border-radius: 20px;
+  background-color: rgb(67, 92, 231);
+  margin: 20px 200px;
+  font-size: 4rem;
 }
 
 .tecnicas {
@@ -354,7 +365,7 @@ a:hover {
   align-items: center;
   width: 50vw;
 }
-.imgServicios :active {
+.imgServicios :hover {
   transform: scale(1.5);
 }
 
@@ -372,6 +383,7 @@ a:hover {
   border-radius: 20px;
   border: 2px solid rgb(45, 15, 216);
   box-shadow: 5px 3px 3px grey;
+  transition: 0.5s;
 }
 
 /*fin servicios*/
@@ -389,6 +401,19 @@ a:hover {
   border-radius: 20px;
   background-color: rgb(67, 92, 231);
   margin: 20px 200px;
+  animation: titVideosani 0.8s ease-in-out 0.1s infinite alternate forwards;
+}
+@keyframes titVideosani {
+  from {
+    width: 25vw;
+    background-color: rgb(146, 146, 243);
+    color: blue;
+  }
+  to {
+    width: 40vw;
+    background-color: rgb(67, 92, 231);
+    color: rgb(176, 176, 230);
+  }
 }
 
 .videosEjercicios {
@@ -450,11 +475,16 @@ a:hover {
 .contacto {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   width: 30vw;
   font-size: 2rem;
   margin: 5px;
   padding: 20px;
+}
+.titContacto {
+  width: 25vw;
+  border-radius: 10px;
+  background-color: rgb(140, 156, 248);
 }
 
 .contacto a {
