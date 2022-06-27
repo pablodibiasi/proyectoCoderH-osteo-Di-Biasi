@@ -50,7 +50,12 @@ header {
   justify-content: space-around;
   width: 80vw;
   border-radius: 20px;
-  background-color: rgba(18, 18, 29, 0.5);
+  background-image: linear-gradient(
+    grey,
+    rgb(110, 110, 110),
+    rgb(71, 70, 70),
+    grey
+  );
   order: 2;
 }
 
@@ -71,7 +76,7 @@ header {
 }
 
 .navbar li a:hover {
-  color: rgb(26, 6, 209);
+  color: rgb(90, 90, 247);
 }
 
 .logoimg {
@@ -147,10 +152,10 @@ a:hover {
   justify-content: space-evenly;
   align-items: center;
   background-image: linear-gradient(
-    rgb(133, 131, 131),
-    rgb(87, 86, 86),
-    rgb(56, 56, 56),
-    rgb(32, 32, 32)
+    rgb(150, 149, 149),
+    rgb(58, 57, 57),
+    rgb(36, 36, 36),
+    rgb(112, 111, 111)
   );
 
   margin-top: 10px;
@@ -162,7 +167,8 @@ a:hover {
 
 .footer div {
   display: inline;
-  color: rgb(98, 120, 243);
+  color: rgb(222, 237, 245);
+  font-size: 1.2em;
   padding: 5px;
 }
 .footer span {
@@ -292,13 +298,18 @@ a:hover {
   list-style-type: none;
   text-align: center;
 }
-
+.picture-objetivo {
+  display: flex;
+}
+.vision {
+  width: 20vw;
+  color: rgb(54, 54, 150);
+}
 .sergioPic {
   width: 25vw;
   height: 70vh;
   margin: 5px;
-  border-radius: 20px;
-  border: 5px solid rgb(29, 6, 133);
+  box-shadow: 6px 5px 3px rgb(88, 88, 88);
   animation: agrandasergio 0.5s ease-in 0s 1 forwards;
 }
 @keyframes agrandasergio {
@@ -308,9 +319,8 @@ a:hover {
     border-radius: 30%;
   }
   to {
-    width: 25vw;
-    height: 70vh;
     border-radius: 20px;
+    border: 1px solid gray;
   }
 }
 
@@ -335,7 +345,12 @@ a:hover {
 .tituloServicios {
   width: 40vw;
   border-radius: 20px;
-  background-color: rgb(67, 92, 231);
+  background-image: linear-gradient(
+    rgb(162, 162, 247),
+    rgb(9, 9, 255),
+    rgb(40, 40, 243),
+    rgb(162, 162, 247)
+  );
   margin: 20px 200px;
   font-size: 4rem;
 }
@@ -372,7 +387,7 @@ a:hover {
 .camilla3 {
   width: 40vw;
   border-radius: 20px;
-  border: 2px solid rgb(45, 15, 216);
+  border: 1px solid gray;
   margin-top: 30px;
 }
 
@@ -381,7 +396,7 @@ a:hover {
   width: 250px;
   height: 200px;
   border-radius: 20px;
-  border: 2px solid rgb(45, 15, 216);
+  border: 1px solid gray;
   box-shadow: 5px 3px 3px grey;
   transition: 0.5s;
 }
@@ -399,19 +414,24 @@ a:hover {
 .titVideos {
   width: 40vw;
   border-radius: 20px;
-  background-color: rgb(67, 92, 231);
+  background-image: linear-gradient(
+    rgb(178, 178, 250),
+    rgb(70, 70, 250),
+    rgb(7, 7, 247),
+    rgb(87, 87, 241)
+  );
   margin: 20px 200px;
   animation: titVideosani 0.8s ease-in-out 0.1s infinite alternate forwards;
 }
 @keyframes titVideosani {
   from {
     width: 25vw;
-    background-color: rgb(146, 146, 243);
-    color: blue;
+
+    color: rgb(49, 49, 53);
   }
   to {
-    width: 40vw;
-    background-color: rgb(67, 92, 231);
+    width: 30vw;
+
     color: rgb(176, 176, 230);
   }
 }
@@ -441,6 +461,7 @@ a:hover {
   height: 40vh;
   border-radius: 20px;
   border: 3px solid gray;
+  box-shadow: 5px 3px 3px grey;
 }
 
 /*fin videos css*/
@@ -450,6 +471,10 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-image: url('../imagenes/Contact-us-background.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: -1;
 }
 .conyform {
   display: flex;
@@ -484,7 +509,11 @@ a:hover {
 .titContacto {
   width: 25vw;
   border-radius: 10px;
-  background-color: rgb(140, 156, 248);
+  background-image: linear-gradient(
+    rgb(162, 162, 247),
+    rgb(9, 9, 255),
+    rgb(87, 87, 241)
+  );
 }
 
 .contacto a {
@@ -524,16 +553,19 @@ a:hover {
   margin: 5px;
   padding: 20px;
   border-radius: 20px;
-  border: 5px solid rgb(42, 30, 210);
-  background-color: rgba(54, 54, 54, 0.5);
-  color: rgb(2, 19, 75);
+  border: 1px solid gray;
+  background-color: rgba(54, 54, 54, 0.9);
+  color: rgb(219, 224, 241);
+}
+.form h2 {
+  color: rgb(219, 224, 241);
 }
 
 .msg {
   border-radius: 20px;
   width: 30vw;
   height: 7vh;
-  border: 2px solid rgb(42, 30, 210);
+  border: 1px solid gray;
   font-family: 'Barlow Condensed', sans-serif;
   font-size: 1.5rem;
   margin: 7px;
@@ -543,7 +575,7 @@ a:hover {
   border-radius: 20px;
   width: 30vw;
   height: 5vh;
-  border: 2px solid rgb(42, 30, 210);
+  border: 1px solid gray;
   font-family: 'Barlow Condensed', sans-serif;
   font-size: 1.5rem;
   margin: 7px;
@@ -553,7 +585,7 @@ a:hover {
   border-radius: 20px;
   height: 5vh;
   width: 30vw;
-  border: 2px solid rgb(42, 30, 210);
+  border: 1px solid gray;
   font-family: 'Barlow Condensed', sans-serif;
   font-size: 1.5rem;
   margin: 7px;
@@ -656,7 +688,13 @@ a:hover {
   h1 {
     margin: 20px;
   }
-
+  .picture-objetivo {
+    display: flex;
+    flex-direction: column;
+  }
+  .vision {
+    width: 70vw;
+  }
   .sergioPic {
     width: 70vw;
     object-fit: cover;
