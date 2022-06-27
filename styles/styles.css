@@ -91,6 +91,19 @@ header {
   border-radius: 20px;
   border: 3px solid gray;
   opacity: 0.9;
+  animation: agrandalogo 0.5s ease-in 0s 1 forwards;
+}
+@keyframes agrandalogo {
+  from {
+    width: 5vw;
+    height: 5vh;
+    border-radius: 50%;
+  }
+  to {
+    width: 14vw;
+    height: 25vh;
+    border-radius: 20px;
+  }
 }
 
 .logoHamburguesa {
@@ -210,6 +223,20 @@ a:hover {
   width: 65vw;
   height: 65vh;
   border-radius: 20px;
+  animation: agrandaIndexImg 0.7s ease-in 0s 1 forwards;
+}
+
+@keyframes agrandaIndexImg {
+  from {
+    width: 35vw;
+    height: 35vh;
+    border-radius: 50%;
+  }
+  to {
+    width: 65vw;
+    height: 65vh;
+    border-radius: 20px;
+  }
 }
 
 .definiciones {
@@ -327,7 +354,7 @@ a:hover {
   align-items: center;
   width: 50vw;
 }
-.imgServicios :hover {
+.imgServicios :active {
   transform: scale(1.5);
 }
 
@@ -344,6 +371,7 @@ a:hover {
   height: 200px;
   border-radius: 20px;
   border: 2px solid rgb(45, 15, 216);
+  box-shadow: 5px 3px 3px grey;
 }
 
 /*fin servicios*/
@@ -534,7 +562,7 @@ a:hover {
   transform: scale(0.9);
 }
 .btn2:hover {
-  background-color: rgb(247, 83, 83);
+  background-color: rgb(248, 138, 138);
 }
 
 /*fin ubicacion y contacto css*/
