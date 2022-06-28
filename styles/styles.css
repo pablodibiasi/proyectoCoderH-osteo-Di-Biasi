@@ -116,7 +116,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.6em;
+  font-size: 1.5em;
   font-style: italic;
   color: rgb(2, 19, 75);
   text-align: center;
@@ -637,7 +637,6 @@ a:hover {
     height: 50px;
     line-height: 50px;
     text-align: center;
-    grid-area: header;
     display: flex;
     justify-items: center;
     align-items: center;
@@ -648,11 +647,6 @@ a:hover {
     margin: 10px;
   }
 
-  .logoimg {
-    width: 20vw;
-    height: 20vh;
-    margin: 5px;
-  }
   .footer {
     flex-direction: column;
   }
@@ -723,7 +717,7 @@ a:hover {
 }
 /*celular media querie*/
 
-@media (max-width: 652px) {
+@media (max-width: 737px) {
   .navbar {
     display: none;
   }
@@ -740,5 +734,54 @@ a:hover {
 
   .videosEjercicios li iframe {
     width: 60vw;
+  }
+  .titVideos {
+    font-size: 30px;
+  }
+}
+@media (max-width: 468px) {
+  @keyframes agrandalogo {
+    from {
+      width: 5vw;
+      height: 5vh;
+      border-radius: 50%;
+    }
+    to {
+      width: 90px;
+      height: 90px;
+      border-radius: 20px;
+    }
+  }
+
+  @keyframes agrandaIndexImg {
+    from {
+      width: 35vw;
+      height: 35vh;
+      border-radius: 50%;
+    }
+    to {
+      width: 65vw;
+      height: 30vh;
+      border-radius: 20px;
+    }
+  }
+  .osteopatia-def h2 {
+    font-size: 25px;
+  }
+  .tituloServicios {
+    font-size: 25px;
+  }
+  .camilla3 {
+    width: 75vw;
+  }
+  .titVideos {
+    font-size: 25px;
+  }
+  .titContacto {
+    font-size: 20px;
+  }
+  .iconoWapp {
+    width: 25px;
+    height: 25px;
   }
 }
