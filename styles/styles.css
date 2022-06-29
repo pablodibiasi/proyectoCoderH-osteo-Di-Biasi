@@ -125,7 +125,8 @@ h2 {
 
 h3 {
   font-size: 1.4em;
-  color: rgb(4, 33, 163);
+  font-style: italic;
+  color: rgb(4, 25, 117);
   text-align: center;
 }
 
@@ -421,16 +422,25 @@ a:hover {
     rgb(87, 87, 241)
   );
   margin: 20px 200px;
-  animation: titVideosani 0.8s ease-in-out 0.1s infinite alternate forwards;
+  animation: titVideosani 1.1s ease-in-out 0.1s infinite alternate forwards;
 }
 @keyframes titVideosani {
   from {
-    width: 25vw;
+    background-image: linear-gradient(
+      rgb(178, 178, 250),
+      rgb(70, 70, 250),
+      rgb(7, 7, 247),
+      rgb(87, 87, 241)
+    );
 
     color: rgb(49, 49, 53);
   }
   to {
-    width: 30vw;
+    background-image: linear-gradient(
+      rgb(38, 38, 253),
+      rgb(81, 81, 241),
+      rgb(117, 103, 221)
+    );
 
     color: rgb(176, 176, 230);
   }
@@ -738,7 +748,14 @@ a:hover {
   .titVideos {
     font-size: 30px;
   }
+  .contacto a {
+    overflow: hidden;
+    width: 30vw;
+    height: 8vh;
+    font-size: 1.5rem;
+  }
 }
+
 @media (max-width: 468px) {
   @keyframes agrandalogo {
     from {
@@ -768,6 +785,9 @@ a:hover {
   .osteopatia-def h2 {
     font-size: 25px;
   }
+  .osteopatia-def h3 {
+    font-size: 22px;
+  }
   .tituloServicios {
     font-size: 25px;
   }
@@ -777,11 +797,45 @@ a:hover {
   .titVideos {
     font-size: 25px;
   }
+  .contacto {
+    align-items: center;
+    width: 70vw;
+    font-size: 1.5rem;
+  }
+
   .titContacto {
     font-size: 20px;
   }
+
+  .iconoWapp {
+    width: 40px;
+    height: 40px;
+  }
+  .emailImg {
+    width: 40px;
+    height: 40px;
+    margin-top: 2px;
+  }
+
   .iconoWapp {
     width: 25px;
     height: 25px;
+  }
+  .form {
+    width: 70vw;
+    height: 60vh;
+  }
+  .btn {
+    width: 50vw;
+    height: 40px;
+  }
+
+  .btn2 {
+    width: 45vw;
+    height: 40px;
+  }
+  .ubicacion iframe {
+    width: 70vw;
+    height: 45vh;
   }
 }
