@@ -150,8 +150,8 @@ a {
   color: rgb(54, 54, 150);
 }
 .sergioPic {
-  width: 25vw;
-  height: 70vh;
+  width: 30vw;
+  height: 75vh;
   margin: 5px;
   box-shadow: 6px 5px 3px rgb(88, 88, 88);
   animation: agrandasergio 0.5s ease-in 0s 1 forwards;
@@ -458,12 +458,45 @@ a {
 
 /*media queries general*/
 
+@media (max-width: 1440px) {
+  .imgServicios img {
+    height: 100vh;
+  }
+  .sergioPic {
+    width: 32vw;
+  }
+}
+
+@media (max-width: 968px) {
+  .imgServicios img {
+    height: 95vh;
+  }
+
+  .sergioPic {
+    width: 40vw;
+  }
+}
+@keyframes agrandaIndexImg {
+  from {
+    width: 35vw;
+    height: 35vh;
+    border-radius: 50%;
+  }
+  to {
+    width: 65vw;
+    height: 80vh;
+    border-radius: 20px;
+  }
+}
+
 @media (max-width: 778px) {
   .quienSoy {
     flex-direction: column;
     align-items: center;
   }
-
+  .imgServicios img {
+    height: 90vh;
+  }
   .picture-objetivo {
     display: flex;
     flex-direction: column;
@@ -472,8 +505,7 @@ a {
     width: 70vw;
   }
   .sergioPic {
-    width: 70vw;
-    object-fit: cover;
+    width: 55vw;
   }
 
   .videosEjercicios {
@@ -496,6 +528,24 @@ a {
 /*celular media querie*/
 
 @media (max-width: 737px) {
+  @keyframes agrandaIndexImg {
+    from {
+      width: 35vw;
+      height: 35vh;
+      border-radius: 50%;
+    }
+    to {
+      width: 65vw;
+      height: 50vh;
+      border-radius: 20px;
+    }
+  }
+  .sergioPic {
+    width: 55vw;
+  }
+  .imgServicios img {
+    height: 85vh;
+  }
   .videosEjercicios {
     grid-template-columns: 1fr;
   }
@@ -531,6 +581,25 @@ a {
     }
   }
 
+  @keyframes agrandaIndexImg {
+    from {
+      width: 35vw;
+      height: 35vh;
+      border-radius: 50%;
+    }
+    to {
+      width: 65vw;
+      height: 35vh;
+      border-radius: 20px;
+    }
+  }
+  .sergioPic {
+    width: 65vw;
+    /* object-fit: cover; */
+  }
+  .imgServicios img {
+    height: 70vh;
+  }
   .titVideos {
     font-size: 25px;
   }
