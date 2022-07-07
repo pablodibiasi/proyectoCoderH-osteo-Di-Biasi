@@ -1,0 +1,46 @@
+.quienSoy {
+  display: flex;
+  align-items: center;
+  &__desc {
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    margin: 5px;
+    padding: 20px;
+    border-radius: 20px;
+  }
+}
+
+.estudios ul {
+  list-style-type: none;
+}
+
+.cargos ul {
+  list-style-type: none;
+}
+.picture-objetivo {
+  display: flex;
+}
+.sergioPic {
+  width: 30vw;
+  height: 75vh;
+  margin: 5px;
+  box-shadow: 6px 5px 3px rgb(88, 88, 88);
+  animation: agrandasergio 0.5s ease-in 0s 1 forwards;
+}
+.vision {
+  width: 20vw;
+  color: rgb(54, 54, 150);
+}
+
+@keyframes agrandasergio {
+  from {
+    width: 15vw;
+    height: 50vh;
+    border-radius: 30%;
+  }
+  to {
+    border-radius: 20px;
+    border: 1px solid gray;
+  }
+}

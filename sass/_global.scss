@@ -1,0 +1,81 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: BarlowCondensed;
+  src: url(../assets/Barlow_Condensed/BarlowCondensed-Regular.ttf);
+  font-style: normal;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: BarlowCondensed;
+  font-size: 2rem;
+  color: rgb(12, 10, 128);
+  background-image: url('../imagenes/curvas.jpg');
+  background-size: cover;
+}
+
+.logoimg {
+  width: 8vw;
+  height: 11vh;
+  border-radius: 20px;
+  border: 1px solid gray;
+  opacity: 0.9;
+  animation: agrandalogo 0.5s ease-in 0s 1 forwards;
+}
+
+@keyframes agrandalogo {
+  from {
+    width: 5vw;
+    height: 5vh;
+    border-radius: 50%;
+  }
+  to {
+    width: 8vw;
+    height: 11vh;
+    border-radius: 20px;
+  }
+}
+h1 {
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  font-style: italic;
+  color: rgb(8, 8, 77);
+}
+
+h2 {
+  font-size: 1.8em;
+  font-weight: bold;
+  font-style: italic;
+  color: rgb(8, 8, 77);
+}
+
+h3 {
+  font-size: 1.6em;
+  font-weight: 600;
+  color: rgb(10, 23, 83);
+}
+h4 {
+  font-size: 1.2em;
+
+  color: rgb(10, 23, 83);
+}
+h5 {
+  font-size: 1.1em;
+}
+
+p {
+  text-align: start;
+}
+
+a {
+  text-decoration: none;
+}

@@ -1,0 +1,188 @@
+@media (max-width: 1440px) {
+  .imgServicios img {
+    height: 100vh;
+  }
+  .sergioPic {
+    width: 32vw;
+  }
+}
+
+@media (max-width: 968px) {
+  .imgServicios img {
+    height: 95vh;
+  }
+
+  .sergioPic {
+    width: 40vw;
+  }
+}
+@keyframes agrandaIndexImg {
+  from {
+    width: 35vw;
+    height: 35vh;
+    border-radius: 50%;
+  }
+  to {
+    width: 65vw;
+    height: 80vh;
+    border-radius: 20px;
+  }
+}
+
+@media (max-width: 778px) {
+  .quienSoy {
+    flex-direction: column;
+    align-items: center;
+  }
+  .imgServicios img {
+    height: 90vh;
+  }
+  .picture-objetivo {
+    display: flex;
+    flex-direction: column;
+  }
+  .vision {
+    width: 70vw;
+  }
+  .sergioPic {
+    width: 55vw;
+  }
+
+  .videosEjercicios {
+    grid-template-columns: repeat(2, 1fr);
+    align-content: space-between;
+  }
+
+  .videosEjercicios li iframe {
+    width: 25vw;
+  }
+
+  .conyform {
+    flex-direction: column;
+  }
+  .ubicacion {
+    flex-direction: column;
+  }
+}
+
+/*celular media querie*/
+
+@media (max-width: 737px) {
+  @keyframes agrandaIndexImg {
+    from {
+      width: 35vw;
+      height: 35vh;
+      border-radius: 50%;
+    }
+    to {
+      width: 65vw;
+      height: 50vh;
+      border-radius: 20px;
+    }
+  }
+  .sergioPic {
+    width: 55vw;
+  }
+  .imgServicios img {
+    height: 85vh;
+  }
+  .videosEjercicios {
+    grid-template-columns: 1fr;
+  }
+  .videosEjercicios li {
+    align-items: center;
+  }
+
+  .videosEjercicios li iframe {
+    width: 60vw;
+  }
+  .titVideos {
+    font-size: 30px;
+  }
+  .contacto a {
+    overflow: hidden;
+    width: 30vw;
+    height: 8vh;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 468px) {
+  @keyframes agrandalogo {
+    from {
+      width: 5vw;
+      height: 5vh;
+      border-radius: 50%;
+    }
+    to {
+      width: 90px;
+      height: 90px;
+      border-radius: 20px;
+    }
+  }
+
+  @keyframes agrandaIndexImg {
+    from {
+      width: 35vw;
+      height: 35vh;
+      border-radius: 50%;
+    }
+    to {
+      width: 65vw;
+      height: 35vh;
+      border-radius: 20px;
+    }
+  }
+  .sergioPic {
+    width: 65vw;
+    /* object-fit: cover; */
+  }
+  .imgServicios img {
+    height: 70vh;
+  }
+  .titVideos {
+    font-size: 25px;
+  }
+  .contacto {
+    align-items: center;
+    width: 70vw;
+    font-size: 1.5rem;
+  }
+
+  .titContacto {
+    font-size: 2em;
+    width: 70vw;
+  }
+
+  .iconoWapp {
+    width: 40px;
+    height: 40px;
+  }
+  .emailImg {
+    width: 40px;
+    height: 40px;
+    margin-top: 2px;
+  }
+
+  .iconoWapp {
+    width: 25px;
+    height: 25px;
+  }
+  .form {
+    width: 70vw;
+    height: 60vh;
+  }
+  .btn {
+    width: 50vw;
+    height: 40px;
+  }
+
+  .btn2 {
+    width: 45vw;
+    height: 40px;
+  }
+  .ubicacion iframe {
+    width: 70vw;
+    height: 45vh;
+  }
+}
