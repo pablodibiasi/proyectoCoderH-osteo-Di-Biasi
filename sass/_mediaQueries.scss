@@ -48,12 +48,12 @@
     width: 55vw;
   }
 
-  .videosEjercicios {
+  .ejercicios__videos {
     grid-template-columns: repeat(2, 1fr);
     align-content: space-between;
   }
 
-  .videosEjercicios li iframe {
+  .ejercicios__videos li iframe {
     width: 25vw;
   }
 
@@ -86,20 +86,20 @@
   .imgServicios img {
     height: 85vh;
   }
-  .videosEjercicios {
+  .ejercicios__videos {
     grid-template-columns: 1fr;
-  }
-  .videosEjercicios li {
-    align-items: center;
+    & li {
+      align-items: center;
+      & iframe {
+        width: 60vw;
+      }
+    }
   }
 
-  .videosEjercicios li iframe {
-    width: 60vw;
-  }
-  .titVideos {
+  .ejercicios__titulo {
     font-size: 30px;
   }
-  .contacto a {
+  .conyform__contacto a {
     overflow: hidden;
     width: 30vw;
     height: 8vh;
@@ -140,16 +140,16 @@
   .imgServicios img {
     height: 70vh;
   }
-  .titVideos {
+  .ejercicios__titulo {
     font-size: 25px;
   }
-  .contacto {
+  .conyform__contacto {
     align-items: center;
     width: 70vw;
     font-size: 1.5rem;
   }
 
-  .titContacto {
+  .conyform__contacto--titulo {
     font-size: 2em;
     width: 70vw;
   }

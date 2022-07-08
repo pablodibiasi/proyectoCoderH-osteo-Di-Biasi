@@ -130,20 +130,10 @@ a {
     border-radius: 20px;
     border: 1px solid gray; } }
 
-.contenedorServ {
-  display: flex;
-  justify-content: space-around; }
+.imgServicios img {
+  height: 500px; }
 
-.servicios {
-  width: 50vw;
-  margin: 10px;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center; }
-
-.tituloServicios {
+.servicios__titulo {
   text-align: center;
   width: 40vw;
   border-radius: 20px;
@@ -152,10 +142,10 @@ a {
   font-size: 4rem;
   animation: titVideosani 1.1s ease-in-out 0.1s infinite alternate forwards; }
 
-.tecnicas {
+.servicios__contenedor--list {
   list-style-type: none; }
 
-.servicioslist {
+.tecnicas {
   list-style-type: none; }
 
 .rehaTraulist {
@@ -167,19 +157,35 @@ a {
 .reedPostlist li {
   list-style-type: none; }
 
-.imgServicios img {
-  height: 500px; }
-
-.ejermain {
+.ejercicios {
   display: flex;
   flex-direction: column;
   align-items: center; }
-
-.titVideos {
-  width: 40vw;
-  border-radius: 20px;
-  margin: 20px 200px;
-  animation: titVideosani 1.1s ease-in-out 0.1s infinite alternate forwards; }
+  .ejercicios__titulo {
+    width: 40vw;
+    border-radius: 20px;
+    margin: 20px 200px;
+    animation: titVideosani 1.1s ease-in-out 0.1s infinite alternate forwards; }
+  .ejercicios__videos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: flex-end;
+    justify-content: space-around; }
+    .ejercicios__videos li {
+      list-style-type: none;
+      margin: 10px;
+      padding: 10px;
+      display: inline-block;
+      text-align: center; }
+      .ejercicios__videos li h3 {
+        margin-bottom: 10px;
+        text-align: center; }
+      .ejercicios__videos li iframe {
+        width: 20vw;
+        height: 40vh;
+        border-radius: 20px;
+        border: 3px solid gray;
+        box-shadow: 5px 3px 3px grey; }
 
 @keyframes titVideosani {
   from {
@@ -189,92 +195,60 @@ a {
     background-image: linear-gradient(#0d6efd, #5151f1, #7567dd);
     color: #b0b0e6; } }
 
-.videosEjercicios {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  align-items: flex-end;
-  justify-content: space-around; }
-
-.videosEjercicios li {
-  list-style-type: none;
-  margin: 10px;
-  padding: 10px;
-  display: inline-block;
-  text-align: center; }
-
-.videosEjercicios li h3 {
-  margin-bottom: 10px;
-  text-align: center; }
-
-.videosEjercicios li iframe {
-  width: 20vw;
-  height: 40vh;
-  border-radius: 20px;
-  border: 3px solid gray;
-  box-shadow: 5px 3px 3px grey; }
-
 .ubicacionMain {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-image: url("../imagenes/Contact-us-background.jpg");
-  background-size: cover;
-  z-index: -1; }
+  background-size: cover; }
 
 .conyform {
   display: flex;
   justify-content: space-evenly; }
-
-.ubicacion {
-  display: flex;
-  justify-content: space-evenly;
-  font-size: 2rem;
-  margin: 5px;
-  padding: 20px; }
-
-.ubicacion iframe {
-  width: 40vw;
-  height: 45vh;
-  border: 4px solid gray;
-  margin: 5px;
-  border-radius: 20px;
-  box-shadow: 6px 5px 3px #585858; }
-
-.contacto {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  width: 30vw;
-  font-size: 2rem;
-  margin: 5px;
-  padding: 20px; }
-
-.titContacto {
-  text-align: center;
-  width: 25vw;
-  border-radius: 10px;
-  background-color: #0d6efd;
-  animation: titVideosani 1.1s ease-in-out 0.1s infinite alternate forwards; }
-
-.contacto a {
-  overflow: hidden;
-  text-decoration: none;
-  height: 50px;
-  background-color: #0d6efd;
-  border-radius: 10px;
-  text-align: center;
-  color: white;
-  font-size: 2rem;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
-  margin: 20px;
-  scroll-padding-bottom: 20px; }
-
-.contacto a:active {
-  transform: scale(0.9); }
-
-.contacto a:hover {
-  color: #140666;
-  background-color: #7174fc; }
+  .conyform__contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 30vw;
+    font-size: 2rem;
+    margin: 5px;
+    padding: 20px; }
+    .conyform__contacto a {
+      overflow: hidden;
+      text-decoration: none;
+      height: 50px;
+      background-color: #0d6efd;
+      border-radius: 10px;
+      text-align: center;
+      color: white;
+      font-size: 2rem;
+      box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+      margin: 20px;
+      scroll-padding-bottom: 20px; }
+    .conyform__contacto--titulo {
+      text-align: center;
+      width: 25vw;
+      border-radius: 10px;
+      background-color: #0d6efd;
+      animation: titVideosani 1.1s ease-in-out 0.1s infinite alternate forwards; }
+    .conyform__contacto--form {
+      text-align: center;
+      width: 45vw;
+      height: 75vh;
+      margin: 5px;
+      padding: 20px;
+      border-radius: 20px;
+      border: 1px solid gray;
+      background-color: rgba(13, 110, 253, 0.9);
+      color: #dbe0f1;
+      box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5); }
+      .conyform__contacto--form h2 {
+        color: #dbe0f1; }
+    .conyform__contacto a:active {
+      transform: scale(0.9); }
+    .conyform__contacto a:hover {
+      color: #140666;
+      background-color: #7174fc; }
 
 .iconoWapp {
   width: 40px;
@@ -284,21 +258,6 @@ a {
   width: 40px;
   height: 40px;
   margin-top: 2px; }
-
-.form {
-  text-align: center;
-  width: 45vw;
-  height: 75vh;
-  margin: 5px;
-  padding: 20px;
-  border-radius: 20px;
-  border: 1px solid gray;
-  background-color: rgba(13, 110, 253, 0.9);
-  color: #dbe0f1;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5); }
-
-.form h2 {
-  color: #dbe0f1; }
 
 .msg {
   border-radius: 20px;
@@ -337,6 +296,10 @@ a {
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
   font-family: 'Barlow Condensed', sans-serif;
   margin: 7px; }
+  .btn:hover {
+    background-color: #5e67f0; }
+  .btn:active {
+    transform: scale(0.9); }
 
 .btn2 {
   width: 18vw;
@@ -348,18 +311,24 @@ a {
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
   font-family: 'Barlow Condensed', sans-serif;
   margin: 7px; }
+  .btn2:hover {
+    background-color: #f88a8a; }
+  .btn2:active {
+    transform: scale(0.9); }
 
-.btn:active {
-  transform: scale(0.9); }
-
-.btn:hover {
-  background-color: #5e67f0; }
-
-.btn2:active {
-  transform: scale(0.9); }
-
-.btn2:hover {
-  background-color: #f88a8a; }
+.ubicacion {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 2rem;
+  margin: 5px;
+  padding: 20px; }
+  .ubicacion iframe {
+    width: 40vw;
+    height: 45vh;
+    border: 4px solid gray;
+    margin: 5px;
+    border-radius: 20px;
+    box-shadow: 6px 5px 3px #585858; }
 
 @media (max-width: 1440px) {
   .imgServicios img {
@@ -396,10 +365,10 @@ a {
     width: 70vw; }
   .sergioPic {
     width: 55vw; }
-  .videosEjercicios {
+  .ejercicios__videos {
     grid-template-columns: repeat(2, 1fr);
     align-content: space-between; }
-  .videosEjercicios li iframe {
+  .ejercicios__videos li iframe {
     width: 25vw; }
   .conyform {
     flex-direction: column; }
@@ -421,15 +390,15 @@ a {
     width: 55vw; }
   .imgServicios img {
     height: 85vh; }
-  .videosEjercicios {
+  .ejercicios__videos {
     grid-template-columns: 1fr; }
-  .videosEjercicios li {
-    align-items: center; }
-  .videosEjercicios li iframe {
-    width: 60vw; }
-  .titVideos {
+    .ejercicios__videos li {
+      align-items: center; }
+      .ejercicios__videos li iframe {
+        width: 60vw; }
+  .ejercicios__titulo {
     font-size: 30px; }
-  .contacto a {
+  .conyform__contacto a {
     overflow: hidden;
     width: 30vw;
     height: 8vh;
@@ -459,13 +428,13 @@ a {
     /* object-fit: cover; */ }
   .imgServicios img {
     height: 70vh; }
-  .titVideos {
+  .ejercicios__titulo {
     font-size: 25px; }
-  .contacto {
+  .conyform__contacto {
     align-items: center;
     width: 70vw;
     font-size: 1.5rem; }
-  .titContacto {
+  .conyform__contacto--titulo {
     font-size: 2em;
     width: 70vw; }
   .iconoWapp {
