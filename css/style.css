@@ -67,6 +67,9 @@ p {
 a {
   text-decoration: none; }
 
+a :hover {
+  color: #3225e9; }
+
 .main__index {
   display: flex;
   flex-direction: column;
@@ -88,7 +91,7 @@ a {
   margin-top: 10px;
   border-radius: 20px;
   border: 2px solid #3f3c4b;
-  box-shadow: 6px 5px 3px #2f2f33; }
+  box-shadow: 6px 5px 3px #585858; }
 
 .quienSoy {
   display: flex;
@@ -184,7 +187,7 @@ a {
         height: 40vh;
         border-radius: 20px;
         border: 3px solid gray;
-        box-shadow: 5px 3px 3px grey; }
+        box-shadow: 6px 5px 3px #585858; }
 
 @keyframes titVideosani {
   from {
@@ -221,7 +224,7 @@ a {
       text-align: center;
       color: white;
       font-size: 2rem;
-      box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+      box-shadow: 6px 5px 3px #585858;
       margin: 20px;
       scroll-padding-bottom: 20px; }
     .conyform__contacto--titulo {
@@ -240,7 +243,7 @@ a {
       border: 1px solid gray;
       background-color: #0d6efd;
       color: #dbe0f1;
-      box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5); }
+      box-shadow: 6px 5px 3px #585858; }
       .conyform__contacto--form h2 {
         color: #dbe0f1; }
     .conyform__contacto a:active {
@@ -292,7 +295,7 @@ a {
   border-radius: 10px;
   color: azure;
   font-size: 1.5rem;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 6px 5px 3px #585858;
   font-family: 'Barlow Condensed', sans-serif;
   margin: 7px; }
   .btn:hover {
@@ -307,7 +310,7 @@ a {
   border-radius: 10px;
   color: azure;
   font-size: 1.5rem;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 6px 5px 3px #585858;
   font-family: 'Barlow Condensed', sans-serif;
   margin: 7px; }
   .btn2:hover {
@@ -423,8 +426,7 @@ a {
       height: 35vh;
       border-radius: 20px; } }
   .sergioPic {
-    width: 65vw;
-    /* object-fit: cover; */ }
+    width: 65vw; }
   .imgServicios img {
     height: 70vh; }
   .ejercicios__titulo {
