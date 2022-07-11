@@ -14,13 +14,11 @@ html {
 body {
   font-family: BarlowCondensed;
   font-size: 2rem;
-  color: #0c0a80;
+  color: #0b4bac;
   background-image: url("../imagenes/curvas.jpg");
   background-size: cover; }
 
 .logoimg {
-  width: 8vw;
-  height: 11vh;
   border-radius: 20px;
   border: 1px solid gray;
   opacity: 0.9;
@@ -32,8 +30,8 @@ body {
     height: 5vh;
     border-radius: 50%; }
   to {
-    width: 8vw;
-    height: 11vh;
+    width: 90px;
+    height: 90px;
     border-radius: 20px; } }
 
 h1 {
@@ -41,22 +39,22 @@ h1 {
   font-size: 2em;
   font-weight: bold;
   font-style: italic;
-  color: #0c0a80; }
+  color: #0b4bac; }
 
 h2 {
   font-size: 1.8em;
   font-weight: bold;
   font-style: italic;
-  color: #0c0a80; }
+  color: #0b4bac; }
 
 h3 {
   font-size: 1.6em;
   font-weight: 600;
-  color: #0c0a80; }
+  color: #0b4bac; }
 
 h4 {
   font-size: 1.2em;
-  color: #0c0a80; }
+  color: #0b4bac; }
 
 h5 {
   font-size: 1.1em; }
@@ -122,7 +120,8 @@ a :hover {
 
 .vision {
   width: 20vw;
-  color: #363696; }
+  font-weight: bold;
+  color: #cf31c7; }
 
 @keyframes agrandasergio {
   from {
@@ -132,9 +131,6 @@ a :hover {
   to {
     border-radius: 20px;
     border: 1px solid gray; } }
-
-.imgServicios img {
-  height: 500px; }
 
 .servicios__titulo {
   text-align: center;
@@ -226,7 +222,8 @@ a :hover {
       font-size: 2rem;
       box-shadow: 6px 5px 3px #585858;
       margin: 20px;
-      scroll-padding-bottom: 20px; }
+      scroll-padding-bottom: 20px;
+      border: 1px solid black; }
     .conyform__contacto--titulo {
       text-align: center;
       width: 25vw;
@@ -240,7 +237,6 @@ a :hover {
       margin: 5px;
       padding: 20px;
       border-radius: 20px;
-      border: 1px solid gray;
       background-color: #0d6efd;
       color: #dbe0f1;
       box-shadow: 6px 5px 3px #585858; }
@@ -297,7 +293,8 @@ a :hover {
   font-size: 1.5rem;
   box-shadow: 6px 5px 3px #585858;
   font-family: 'Barlow Condensed', sans-serif;
-  margin: 7px; }
+  margin: 7px;
+  border: 1px solid black; }
   .btn:hover {
     background-color: #5e67f0; }
   .btn:active {
@@ -306,6 +303,7 @@ a :hover {
 .btn2 {
   width: 18vw;
   height: 10vh;
+  border: 1px solid black;
   background-color: #e74747;
   border-radius: 10px;
   color: azure;
@@ -327,7 +325,7 @@ a :hover {
   .ubicacion iframe {
     width: 40vw;
     height: 45vh;
-    border: 4px solid gray;
+    border: 1px solid black;
     margin: 5px;
     border-radius: 20px;
     box-shadow: 6px 5px 3px #585858; }
@@ -366,7 +364,7 @@ a :hover {
   .vision {
     width: 70vw; }
   .sergioPic {
-    width: 55vw; }
+    width: 50vw; }
   .ejercicios__videos {
     grid-template-columns: repeat(2, 1fr);
     align-content: space-between; }
@@ -404,18 +402,19 @@ a :hover {
     overflow: hidden;
     width: 30vw;
     height: 8vh;
-    font-size: 1.5rem; } }
+    font-size: 1.5rem; }
+  .conyform__contacto {
+    align-items: center;
+    width: 70vw;
+    font-size: 1.5rem; }
+    .conyform__contacto--titulo {
+      font-size: 2em;
+      width: 70vw; }
+    .conyform__contacto--form {
+      width: 70vw;
+      height: 65vh; } }
 
 @media (max-width: 468px) {
-  @keyframes agrandalogo {
-    from {
-      width: 5vw;
-      height: 5vh;
-      border-radius: 50%; }
-    to {
-      width: 90px;
-      height: 90px;
-      border-radius: 20px; } }
   @keyframes agrandaIndexImg {
     from {
       width: 35vw;
@@ -426,18 +425,11 @@ a :hover {
       height: 35vh;
       border-radius: 20px; } }
   .sergioPic {
-    width: 65vw; }
+    width: 86vw; }
   .imgServicios img {
-    height: 70vh; }
+    height: 60vh; }
   .ejercicios__titulo {
     font-size: 25px; }
-  .conyform__contacto {
-    align-items: center;
-    width: 70vw;
-    font-size: 1.5rem; }
-  .conyform__contacto--titulo {
-    font-size: 2em;
-    width: 70vw; }
   .iconoWapp {
     width: 40px;
     height: 40px; }
@@ -448,9 +440,6 @@ a :hover {
   .iconoWapp {
     width: 25px;
     height: 25px; }
-  .form {
-    width: 70vw;
-    height: 60vh; }
   .btn {
     width: 50vw;
     height: 40px; }

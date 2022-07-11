@@ -45,7 +45,7 @@
     width: 70vw;
   }
   .sergioPic {
-    width: 55vw;
+    width: 50vw;
   }
 
   .ejercicios__videos {
@@ -105,22 +105,22 @@
     height: 8vh;
     font-size: 1.5rem;
   }
+  .conyform__contacto {
+    align-items: center;
+    width: 70vw;
+    font-size: 1.5rem;
+    &--titulo {
+      font-size: 2em;
+      width: 70vw;
+    }
+    &--form {
+      width: 70vw;
+      height: 65vh;
+    }
+  }
 }
 
 @media (max-width: 468px) {
-  @keyframes agrandalogo {
-    from {
-      width: 5vw;
-      height: 5vh;
-      border-radius: 50%;
-    }
-    to {
-      width: 90px;
-      height: 90px;
-      border-radius: 20px;
-    }
-  }
-
   @keyframes agrandaIndexImg {
     from {
       width: 35vw;
@@ -134,23 +134,13 @@
     }
   }
   .sergioPic {
-    width: 65vw;
+    width: 86vw;
   }
   .imgServicios img {
-    height: 70vh;
+    height: 60vh;
   }
   .ejercicios__titulo {
     font-size: 25px;
-  }
-  .conyform__contacto {
-    align-items: center;
-    width: 70vw;
-    font-size: 1.5rem;
-  }
-
-  .conyform__contacto--titulo {
-    font-size: 2em;
-    width: 70vw;
   }
 
   .iconoWapp {
@@ -167,10 +157,7 @@
     width: 25px;
     height: 25px;
   }
-  .form {
-    width: 70vw;
-    height: 60vh;
-  }
+
   .btn {
     width: 50vw;
     height: 40px;

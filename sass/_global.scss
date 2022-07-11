@@ -23,8 +23,6 @@ body {
 }
 
 .logoimg {
-  width: 8vw;
-  height: 11vh;
   border-radius: 20px;
   border: 1px solid gray;
   opacity: 0.9;
@@ -38,8 +36,8 @@ body {
     border-radius: 50%;
   }
   to {
-    width: 8vw;
-    height: 11vh;
+    width: 90px;
+    height: 90px;
     border-radius: 20px;
   }
 }
