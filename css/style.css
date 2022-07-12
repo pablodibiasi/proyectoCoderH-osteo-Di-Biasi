@@ -72,8 +72,9 @@ a :hover {
   display: flex;
   flex-direction: column;
   align-items: center; }
-  .main__indexindexImg {
-    animation: agrandaIndexImg 0.5s ease-in 0s 1 forwards; }
+
+.indexImg {
+  animation: agrandaIndexImg 0.5s ease-in 0s 1 forwards; }
 
 @keyframes agrandaIndexImg {
   from {
@@ -81,8 +82,8 @@ a :hover {
     height: 35vh;
     border-radius: 50%; }
   to {
-    width: 65vw;
-    height: 65vh;
+    width: 70vw;
+    height: 70vh;
     border-radius: 20px; } }
 
 .esqueleto-colores {
@@ -285,32 +286,32 @@ a :hover {
   margin: 7px; }
 
 .btn {
-  width: 20vw;
   height: 10vh;
-  background-color: #2b4d81;
   border-radius: 10px;
-  color: azure;
-  font-size: 1.5rem;
-  box-shadow: 6px 5px 3px #585858;
-  font-family: 'Barlow Condensed', sans-serif;
+  border: 1px solid #0a0a0a;
   margin: 7px;
-  border: 1px solid black; }
+  font-family: 'Barlow Condensed', sans-serif;
+  box-shadow: 6px 5px 3px #585858;
+  font-size: 1.5rem;
+  color: azure;
+  width: 20vw;
+  background-color: #2b4d81; }
   .btn:hover {
     background-color: #5e67f0; }
   .btn:active {
     transform: scale(0.9); }
 
 .btn2 {
-  width: 18vw;
   height: 10vh;
-  border: 1px solid black;
-  background-color: #e74747;
   border-radius: 10px;
-  color: azure;
-  font-size: 1.5rem;
-  box-shadow: 6px 5px 3px #585858;
+  border: 1px solid #0a0a0a;
+  margin: 7px;
   font-family: 'Barlow Condensed', sans-serif;
-  margin: 7px; }
+  box-shadow: 6px 5px 3px #585858;
+  font-size: 1.5rem;
+  color: azure;
+  width: 18vh;
+  background-color: #e74747; }
   .btn2:hover {
     background-color: #f88a8a; }
   .btn2:active {
