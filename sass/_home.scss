@@ -22,6 +22,5 @@
 .esqueleto-colores {
   margin-top: 10px;
   border-radius: 20px;
-  border: 2px solid rgb(63, 60, 75);
-  box-shadow: $sombreadoprincipal;
+  @extend.borde-sombra;
 }

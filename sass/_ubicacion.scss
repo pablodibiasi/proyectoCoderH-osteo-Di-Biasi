@@ -28,10 +28,10 @@
       text-align: center;
       color: white;
       font-size: 2rem;
-      box-shadow: $sombreadoprincipal;
+
       margin: 20px;
       scroll-padding-bottom: 20px;
-      border: 1px solid black;
+      @extend.borde-sombra;
     }
     &--titulo {
       text-align: center;
@@ -49,7 +49,7 @@
       border-radius: 20px;
       background-color: $fondoTitulos;
       color: rgb(219, 224, 241);
-      box-shadow: $sombreadoprincipal;
+      @extend.borde-sombra;
       & h2 {
         color: rgb(219, 224, 241);
       }
@@ -107,10 +107,9 @@
 @mixin btn-base($ancho, $fondo) {
   height: 10vh;
   border-radius: 10px;
-  border: 1px solid rgb(10, 10, 10);
+  @extend.borde-sombra;
   margin: 7px;
   font-family: 'Barlow Condensed', sans-serif;
-  box-shadow: $sombreadoprincipal;
   font-size: 1.5rem;
   color: azure;
   width: $ancho;
@@ -148,9 +147,8 @@
   & iframe {
     width: 40vw;
     height: 45vh;
-    border: 1px solid black;
+    @extend.borde-sombra;
     margin: 5px;
     border-radius: 20px;
-    box-shadow: $sombreadoprincipal;
   }
 }

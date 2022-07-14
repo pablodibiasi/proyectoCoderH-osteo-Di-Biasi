@@ -1,3 +1,7 @@
+.borde-sombra, .esqueleto-colores, .sergioPic, .ejercicios__videos li iframe, .conyform__contacto a, .conyform__contacto--form, .btn, .btn2, .ubicacion iframe {
+  border: 2px solid black;
+  box-shadow: 6px 5px 3px #585858; }
+
 * {
   margin: 0px;
   padding: 0px;
@@ -88,9 +92,7 @@ a :hover {
 
 .esqueleto-colores {
   margin-top: 10px;
-  border-radius: 20px;
-  border: 2px solid #3f3c4b;
-  box-shadow: 6px 5px 3px #585858; }
+  border-radius: 20px; }
 
 .quienSoy {
   display: flex;
@@ -116,7 +118,6 @@ a :hover {
   width: 30vw;
   height: 75vh;
   margin: 5px;
-  box-shadow: 6px 5px 3px #585858;
   animation: agrandasergio 0.5s ease-in 0s 1 forwards; }
 
 .vision {
@@ -182,9 +183,7 @@ a :hover {
       .ejercicios__videos li iframe {
         width: 20vw;
         height: 40vh;
-        border-radius: 20px;
-        border: 3px solid gray;
-        box-shadow: 6px 5px 3px #585858; }
+        border-radius: 20px; }
 
 @keyframes titVideosani {
   from {
@@ -221,10 +220,8 @@ a :hover {
       text-align: center;
       color: white;
       font-size: 2rem;
-      box-shadow: 6px 5px 3px #585858;
       margin: 20px;
-      scroll-padding-bottom: 20px;
-      border: 1px solid black; }
+      scroll-padding-bottom: 20px; }
     .conyform__contacto--titulo {
       text-align: center;
       width: 25vw;
@@ -239,8 +236,7 @@ a :hover {
       padding: 20px;
       border-radius: 20px;
       background-color: #0d6efd;
-      color: #dbe0f1;
-      box-shadow: 6px 5px 3px #585858; }
+      color: #dbe0f1; }
       .conyform__contacto--form h2 {
         color: #dbe0f1; }
     .conyform__contacto a:active {
@@ -288,10 +284,8 @@ a :hover {
 .btn {
   height: 10vh;
   border-radius: 10px;
-  border: 1px solid #0a0a0a;
   margin: 7px;
   font-family: 'Barlow Condensed', sans-serif;
-  box-shadow: 6px 5px 3px #585858;
   font-size: 1.5rem;
   color: azure;
   width: 20vw;
@@ -304,10 +298,8 @@ a :hover {
 .btn2 {
   height: 10vh;
   border-radius: 10px;
-  border: 1px solid #0a0a0a;
   margin: 7px;
   font-family: 'Barlow Condensed', sans-serif;
-  box-shadow: 6px 5px 3px #585858;
   font-size: 1.5rem;
   color: azure;
   width: 18vh;
@@ -326,10 +318,8 @@ a :hover {
   .ubicacion iframe {
     width: 40vw;
     height: 45vh;
-    border: 1px solid black;
     margin: 5px;
-    border-radius: 20px;
-    box-shadow: 6px 5px 3px #585858; }
+    border-radius: 20px; }
 
 @media (max-width: 1440px) {
   .imgServicios img {

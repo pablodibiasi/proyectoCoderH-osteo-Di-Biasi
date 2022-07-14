@@ -27,8 +27,7 @@
         width: 20vw;
         height: 40vh;
         border-radius: 20px;
-        border: 3px solid gray;
-        box-shadow: $sombreadoprincipal;
+        @extend.borde-sombra;
       }
     }
   }
