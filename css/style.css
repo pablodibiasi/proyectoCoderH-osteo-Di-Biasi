@@ -2,6 +2,18 @@
   border: 2px solid black;
   box-shadow: 6px 5px 3px #585858; }
 
+.link-youtube {
+  color: red; }
+
+.link-facebook {
+  color: #182bd6; }
+
+.link-twitter {
+  color: #71d1f1; }
+
+.link-instagram {
+  color: #d809d8; }
+
 * {
   margin: 0px;
   padding: 0px;
@@ -70,7 +82,7 @@ a {
   text-decoration: none; }
 
 a :hover {
-  color: #3225e9; }
+  color: #4940cc; }
 
 .main__index {
   display: flex;

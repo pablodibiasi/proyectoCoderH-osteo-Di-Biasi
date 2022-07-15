@@ -6,3 +6,16 @@ $fondoTitulos: rgb(13, 110, 253);
   border: 2px solid black;
   box-shadow: 6px 5px 3px rgb(88, 88, 88);
 }
+
+$redes-sociales: (
+  youtube: red,
+  facebook: rgb(24, 43, 214),
+  twitter: rgb(113, 209, 241),
+  instagram: rgb(216, 9, 216),
+);
+
+@each $red, $color in $redes-sociales {
+  .link-#{$red} {
+    color: $color;
+  }
+}
