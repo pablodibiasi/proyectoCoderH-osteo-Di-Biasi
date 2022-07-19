@@ -52,7 +52,7 @@ body {
 
 h1 {
   text-align: center;
-  font-size: 2em;
+  font-size: 1.9em;
   font-weight: bold;
   font-style: italic;
   color: #0b4bac; }
@@ -81,7 +81,7 @@ p {
 a {
   text-decoration: none; }
 
-a :hover {
+a:hover {
   color: #4940cc; }
 
 .main__index {
